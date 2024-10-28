@@ -2,21 +2,33 @@
 
 int main(void) {
 	// your code goes here
-	int t;
+	int a,b,c,d;
+	int z,x,y,i,t;
+	
 	scanf("%d",&t);
-	while(t--)
+	
+	for(i=1;i<=t;i++)
 	{
-	    int n,k,a=0,val,i;
-	    scanf("%d %d",&n,&k);
-	    int c[n];
-	    for(i=0;i<n;i++)
+	    scanf("%d%d%d%d",&a,&b,&c,&d);
+	    if(a>b)
 	    {
-	        scanf("%d",&val);
-	        c[i]=val+k;
-	        if(c[i]%7==0)
-	        a++;
+	        x=a;
+	    } 
+	    else 
+	    {
+	        x=b;
 	    }
-	    printf("%d\n",a);
+	    if(c>d)
+	    {
+	        y=c;
+	    } 
+	    else
+	    {
+	        y=d;
+	    }
+	    
+	    z=x+y;
+	    printf("%d\n",z);
 	}
 	return 0;
 }
